@@ -27,12 +27,11 @@ export default function Navbar() {
   return (
     <nav>
       <div
-        className={`
-      ${
-        isScrolled
-          ? "bg-gray-500 bg-transparent rounded-full backdrop-blur-md shadow-sm py-2 fixed top-6 transition-all duration-300 z-50 w-full animate-flyIn"
-          : "bg-transparent py-4"
-      } flex justify-between py-10 px-10`}
+        className={` ${
+          isScrolled
+            ? "fixed top-6 z-50 w-full animate-flyIn rounded-full bg-gray-500 bg-transparent py-2 shadow-sm backdrop-blur-md transition-all duration-300"
+            : "bg-transparent py-4"
+        } flex justify-between px-10 py-10`}
       >
         {/* logo */}
         <div className="flex items-center">
@@ -41,14 +40,14 @@ export default function Navbar() {
         {/* search bar */}
         <div id="search-bar">
           <form>
-            <div className="flex-1 max-w-2xl mx-8">
+            <div className="mx-8 max-w-2xl flex-1">
               <div className="relative">
                 <input
                   type="search"
                   placeholder="Cari negara, kota atau guide"
-                  className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-red-500"
+                  className="w-full rounded-full border border-gray-300 px-4 py-2 focus:border-red-500 focus:outline-none"
                 />
-                <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full">
+                <button className="absolute right-2 top-1/2 -translate-y-1/2 transform rounded-full bg-red-600 p-2 text-white">
                   <Search size={16} />
                 </button>
               </div>
@@ -64,7 +63,7 @@ export default function Navbar() {
                   <NavLink
                     to={navigation.href}
                     className={({ isActive }) =>
-                      `${isActive ? "font-bold " : "font-medium"} text-red-500`
+                      `${isActive ? "font-bold" : "font-medium"} text-red-500`
                     }
                   >
                     {navigation.name}
