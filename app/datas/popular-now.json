@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Alice",
+        "city": "New York",
+        "country": "USA",
+        "imgUrl": "https://example.com/images/alice.jpg"
+    },
+    {
+        "name": "Carlos",
+        "city": "Barcelona",
+        "country": "Spain",
+        "imgUrl": "https://example.com/images/carlos.jpg"
+    },
+    {
+        "name": "Emma",
+        "city": "Sydney",
+        "country": "Australia",
+        "imgUrl": "https://example.com/images/emma.jpg"
+    },
+    {
+        "name": "Liam",
+        "city": "Toronto",
+        "country": "Canada",
+        "imgUrl": "https://example.com/images/liam.jpg"
+    },
+    {
+        "name": "Nina",
+        "city": "Paris",
+        "country": "France",
+        "imgUrl": "https://example.com/images/nina.jpg"
+    },
+    {
+        "name": "Jiro",
+        "city": "Tokyo",
+        "country": "Japan",
+        "imgUrl": "https://example.com/images/jiro.jpg"
+    },
+    {
+        "name": "Olga",
+        "city": "Moscow",
+        "country": "Russia",
+        "imgUrl": "https://example.com/images/olga.jpg"
+    },
+    {
+        "name": "Mateo",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "imgUrl": "https://example.com/images/mateo.jpg"
+    },
+    {
+        "name": "Sara",
+        "city": "Stockholm",
+        "country": "Sweden",
+        "imgUrl": "https://example.com/images/sara.jpg"
+    },
+    {
+        "name": "Amina",
+        "city": "Cairo",
+        "country": "Egypt",
+        "imgUrl": "https://example.com/images/amina.jpg"
+    }
+]
