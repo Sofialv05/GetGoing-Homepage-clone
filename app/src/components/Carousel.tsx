@@ -78,7 +78,7 @@ const Carousel: React.FC = () => {
           <div className="container flex h-full justify-between gap-10">
             <img src={images[1]} alt={`Slide 2`} className="rounded-xl" />
             <div className="flex flex-grow flex-col items-center justify-center">
-              <div className="flex flex-col uppercase">
+              <div className="flex flex-col text-2xl uppercase">
                 Apa yang GoGoTrip punya ?
               </div>
               <ul className="w-full justify-center self-center">

@@ -20,7 +20,7 @@ const PopularNowSlider: React.FC<PopularNowSliderProps> = ({ datas }) => {
         Sedang <span className="highlight">Populer</span>
       </h1>
 
-      <div className="mt-8 font-sans text-sm text-black">
+      <div className="font-roboto mt-8 text-sm text-black">
         <Swiper
           slidesPerView={5}
           spaceBetween={50}

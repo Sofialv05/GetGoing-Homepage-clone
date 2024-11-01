@@ -19,7 +19,7 @@ const PopularCitySlider: React.FC<PopularCitySliderProps> = ({ datas }) => {
       <h1 className="heading">
         Kota <span className="highlight">Populer</span>
       </h1>
-      <div className="mt-9 font-sans text-sm text-black">
+      <div className="font-roboto mt-9 text-sm text-black">
         <Swiper
           slidesPerView={5}
           spaceBetween={30}

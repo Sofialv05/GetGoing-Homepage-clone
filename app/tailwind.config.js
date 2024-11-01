@@ -12,6 +12,10 @@ export default {
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
       },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
+      },
     },
     container: {
       center: true,

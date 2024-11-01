@@ -18,7 +18,7 @@
 }
 
 section {
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 
 .heading {
@@ -30,4 +30,8 @@ section {
 
 .highlight {
     color: #dc2626;
+}
+
+.search-bar-shadow {
+    box-shadow: 0px 0px 20px rgba(226, 10, 10, 0.4)
 }

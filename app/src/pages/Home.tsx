@@ -4,14 +4,14 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import PrivateTrip from "../components/PrivateTrip";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 import PopularNowData from "../../datas/popular-now.json";
 import PopularCityData from "../../datas/popular-cities.json";
 import PopularCitySlider from "../components/PopularCitySlider";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div className="font-roboto h-full">
       <header>
         <Navbar />
       </header>
@@ -30,7 +30,7 @@ export default function Home() {
         </section>
         <PrivateTrip />
         <PopularCitySlider datas={PopularCityData} />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ArticleList />
       </main>
       <Footer />

@@ -14,7 +14,6 @@ const Testimonials: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start">
-        {/* Left - Quote Section */}
         <div className="space-y-4 p-6 text-gray-800 lg:w-2/3">
           <FaQuoteLeft className="text-6xl text-gray-200" />
           <h3 className="text-xl font-bold">
@@ -27,7 +26,6 @@ const Testimonials: React.FC = () => {
             informasinya yang cukup lengkap. Bintang 5 pokoknya.
           </p>
 
-          {/* Navigation Arrows */}
           <div className="mt-6 flex space-x-4">
             <button className="rounded-full bg-gray-100 p-2 text-gray-500 hover:bg-gray-200">
               <FaChevronLeft />

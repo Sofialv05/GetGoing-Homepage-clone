@@ -14,7 +14,7 @@ export const AppStoreButton = () => {
       </div>
       <div>
         <div className="text-xs">Download on the</div>
-        <div className="-mt-1 font-sans text-xl font-semibold">App Store</div>
+        <div className="font-roboto -mt-1 text-xl font-semibold">App Store</div>
       </div>
     </button>
   );
@@ -48,7 +48,9 @@ export const GooglePlayButton = () => {
       </div>
       <div>
         <div className="text-xs">GET IT ON</div>
-        <div className="-mt-1 font-sans text-xl font-semibold">Google Play</div>
+        <div className="font-roboto -mt-1 text-xl font-semibold">
+          Google Play
+        </div>
       </div>
     </button>
   );
