@@ -34,7 +34,10 @@ const ArticleList: React.FC = () => (
       <div className="flex justify-between">
         <h2 className="text-2xl font-bold">Baca Juga</h2>
         <div className="flex justify-center">
-          <a href="#" className="font-semibold text-red-500 hover:underline">
+          <a
+            href="#"
+            className="rounded-full border border-red-700 px-4 py-2 font-bold uppercase text-red-500 hover:border-blue-600 hover:bg-blue-600 hover:text-white"
+          >
             Lihat Semua Artikel &rarr;
           </a>
         </div>

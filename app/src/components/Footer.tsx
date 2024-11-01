@@ -1,14 +1,17 @@
 // import React from 'react'
 
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { AppStoreButton, GooglePlayButton } from "./Button";
+
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white lg:text-left">
-      <div className="container p-6">
-        <div className="grid place-items-center md:grid-cols-2 lg:grid-cols-4">
-          <div className="mb-6">
+    <footer className="text-surface flex flex-col items-center bg-red-700 pt-20 text-center lg:text-left dark:text-white">
+      <div className="container">
+        <div className="grid justify-center md:grid-cols-2 lg:grid-cols-4">
+          <div className="mb-6 justify-center">
             <h5 className="mb-2.5 font-bold uppercase">Informasi kontak</h5>
 
-            <ul className="mb-0 list-none">
+            <ul className="mb-0 list-none justify-self-center">
               <li>
                 BSD Green Office Park 1, 6th Floor, BSD City, Tangerang, Banten
                 15345
@@ -20,53 +23,58 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-6 justify-self-center">
             <img
               src="https://getgoing.co.id/content/img/MockupApp.png"
               alt=""
+              className="h-60"
             />
           </div>
 
-          <div className="mb-6">
-            <h5 className="mb-2.5 font-bold uppercase">Download di</h5>
+          <div className="mb-6 justify-self-center">
+            <h5 className="mb-10 font-bold uppercase">Download di</h5>
+            <div>
+              <AppStoreButton />
+              <GooglePlayButton />
+            </div>
           </div>
 
-          <div className="mb-6">
+          <div className="mb-6 justify-self-center">
             <h5 className="mb-2.5 font-bold uppercase">Lainnya</h5>
 
-            <ul className="mb-0 list-none ">
+            <ul className="mb-0 list-none">
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Syarat dan Ketentuan
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Kebijakan Privasi
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Dokumentasi
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Penghargaan
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Login
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Press
                 </a>
               </li>
               <li>
-                <a href="#!" className="hover:underline">
+                <a href="#" className="hover:underline">
                   F.A.Q
                 </a>
               </li>
@@ -75,11 +83,17 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full bg-black/5 p-4 text-center flex justify-between">
-        <div>© 2024 - PT. Gue Eksplorasi Terus. All rights reserved.</div>
-        <div>
-          <a>I</a>
-          <a>F</a>
+      <div className="flex h-20 w-full justify-between bg-black text-center">
+        <div className="container flex items-center justify-between">
+          <div>© 2024 - PT. Gue Eksplorasi Terus. All rights reserved.</div>
+          <div className="flex gap-2">
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="">
+              <FaFacebookSquare />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

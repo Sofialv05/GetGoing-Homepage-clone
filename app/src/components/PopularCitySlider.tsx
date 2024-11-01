@@ -16,10 +16,10 @@ const PopularCitySlider: React.FC<PopularCitySliderProps> = ({ datas }) => {
 
   return (
     <section className="container relative">
-      <h1>
-        Kota <span>Populer</span>
+      <h1 className="heading">
+        Kota <span className="highlight">Populer</span>
       </h1>
-      <div className="font-sans text-sm text-black">
+      <div className="mt-9 font-sans text-sm text-black">
         <Swiper
           slidesPerView={5}
           spaceBetween={30}
@@ -43,17 +43,17 @@ const PopularCitySlider: React.FC<PopularCitySliderProps> = ({ datas }) => {
           {datas.map((data, index) => (
             <SwiperSlide
               key={index}
-              className="mb-20 flex items-center justify-center overflow-hidden bg-white"
+              className="relative mb-20 flex items-center justify-center overflow-hidden bg-white"
             >
               <img
                 src={data.img}
                 alt={data.name}
                 className="h-[400px] w-full rounded-xl object-cover"
               />
-
-              <div className="mt-2 flex flex-col">
-                <h3 className="text-xl font-semibold">{data.name}</h3>
-                <p className="text-gray-600">{data.country}</p>
+              <div className="image-cover rounded-lg"></div>
+              <div className="absolute bottom-4 left-4 mt-2 flex flex-col text-white">
+                <h3 className="text-3xl font-bold">{data.name}</h3>
+                <p className="mt-3 text-xl">{data.country}</p>
               </div>
             </SwiperSlide>
           ))}

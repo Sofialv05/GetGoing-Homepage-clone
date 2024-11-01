@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.image-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+    opacity: 0.75;
+}
+
+.feature-container {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+section {
+    padding-bottom: 10rem;
+}
+
+.heading {
+    margin-top: 2.5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+
+}
+
+.highlight {
+    color: #dc2626;
+}

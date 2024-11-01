@@ -58,13 +58,16 @@ const Carousel: React.FC = () => {
         <SwiperSlide className="items-center justify-between bg-white text-lg">
           <div className="container flex h-full justify-between gap-10">
             <img src={images[0]} alt={`Slide 1`} className="rounded-xl" />
-            <div className="mx-20 flex-1">
-              <div className="flex flex-col uppercase">
+
+            <div className="flex-1 self-center px-24">
+              <div className="flex flex-col text-center uppercase">
                 Eksplor dan nikmati mudah liburan ke luar negeri dengan
-                <span className="capitalize">Aplikasi GoGoTrip</span>
-                Dapat didownload di
+                <span className="my-2 text-4xl font-bold capitalize">
+                  Aplikasi GoGoTrip
+                </span>
+                Dapat didownload di :
               </div>
-              <div className="flex">
+              <div className="my-2 flex justify-between">
                 <AppStoreButton />
                 <GooglePlayButton />
               </div>

@@ -16,10 +16,11 @@ const PopularNowSlider: React.FC<PopularNowSliderProps> = ({ datas }) => {
 
   return (
     <div className="container relative">
-      <h1>
-        Sedang <span>Populer</span>
+      <h1 className="heading">
+        Sedang <span className="highlight">Populer</span>
       </h1>
-      <div className="font-sans text-sm text-black">
+
+      <div className="mt-8 font-sans text-sm text-black">
         <Swiper
           slidesPerView={5}
           spaceBetween={50}

@@ -20,12 +20,12 @@ export default function Home() {
         <PopularNowSlider datas={PopularNowData} />
         <section className="container">
           <div className="flex flex-col items-center">
-            <h1>
-              "Better to <span className="uppercase">see</span> something once
-              than hear about it{" "}
-              <span className="uppercase">a thousand times</span>"
+            <h1 className="heading">
+              "Better to <span className="highlight uppercase">see</span>{" "}
+              something once than hear about it{" "}
+              <span className="highlight uppercase">a thousand times</span>"
             </h1>
-            <p>- Asian Proverb.</p>
+            <p className="text-3xl font-bold">- Asian Proverb.</p>
           </div>
         </section>
         <PrivateTrip />
