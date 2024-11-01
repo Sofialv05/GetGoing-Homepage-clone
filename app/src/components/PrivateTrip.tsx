@@ -3,7 +3,7 @@ import { FaCalendarAlt, FaUserFriends, FaBus, FaStar } from "react-icons/fa";
 
 const PrivateTrip: React.FC = () => {
   return (
-    <div className="flex flex-col items-start gap-8 p-8 lg:flex-row lg:items-center">
+    <section className="container flex flex-col gap-8 lg:flex-row lg:items-center">
       {/* Left Section */}
       <div className="space-y-4 lg:w-1/2">
         <h2 className="text-lg font-bold uppercase text-red-500">
@@ -55,7 +55,7 @@ const PrivateTrip: React.FC = () => {
           description="Hotel, Asuransi, Visa, Wifi dll"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

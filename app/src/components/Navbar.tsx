@@ -1,7 +1,6 @@
 import { Search } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,13 +24,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav>
+    <nav className="container">
       <div
         className={` ${
           isScrolled
-            ? "fixed top-6 z-50 w-full animate-flyIn rounded-full bg-gray-500 bg-transparent py-2 shadow-sm backdrop-blur-md transition-all duration-300"
+            ? "top-6 animate-flyIn self-center rounded-full bg-gray-500 bg-transparent py-2 shadow-sm backdrop-blur-md transition-all duration-300"
             : "bg-transparent py-4"
-        } flex justify-between px-10 py-10`}
+        } fixed z-50 flex w-[91rem] justify-between px-10 py-10`}
       >
         {/* logo */}
         <div className="flex items-center">

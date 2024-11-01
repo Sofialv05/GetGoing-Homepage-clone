@@ -11,8 +11,8 @@ import { AppStoreButton, GooglePlayButton } from "./Button";
 //   images: string[];
 // }
 const images = [
-  "https://plus.unsplash.com/premium_photo-1684407617181-275e50374e95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJpcHxlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1620851500170-860a690a7101?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJpcHxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1521900092653-4bf38fcd896a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDU4fHx8ZW58MHx8fHx8",
+  "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
 ];
 
 const features = [
@@ -20,15 +20,20 @@ const features = [
     id: 1,
     title: "Trip Planner",
     subtitle: "Susun Rute Perjalananmu Sendiri",
-    icon: "",
+    icon: "plane.png",
   },
   {
     id: 2,
     title: "Guide",
     subtitle: "Tour Guide berbahasa Indonesia",
-    icon: "",
+    icon: "/user.png",
   },
-  { id: 3, title: "Info", subtitle: "Info penting di luar negeri", icon: "" },
+  {
+    id: 3,
+    title: "Info",
+    subtitle: "Info penting di luar negeri",
+    icon: "/map.png",
+  },
 ];
 
 const Carousel: React.FC = () => {
@@ -50,13 +55,13 @@ const Carousel: React.FC = () => {
           swiperRef.current = swiper;
         }}
       >
-        <SwiperSlide className="h-full items-center justify-center bg-white text-lg">
-          <div className="flex justify-center gap-10">
+        <SwiperSlide className="items-center justify-between bg-white text-lg">
+          <div className="container flex h-full justify-between gap-10">
             <img src={images[0]} alt={`Slide 1`} className="rounded-xl" />
-            <div>
+            <div className="mx-20 flex-1">
               <div className="flex flex-col uppercase">
                 Eksplor dan nikmati mudah liburan ke luar negeri dengan
-                <span className="capitalize">Aplikasi GoTravel</span>
+                <span className="capitalize">Aplikasi GoGoTrip</span>
                 Dapat didownload di
               </div>
               <div className="flex">
@@ -66,22 +71,28 @@ const Carousel: React.FC = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center bg-white text-lg">
-          <div className="flex justify-center gap-10">
+        <SwiperSlide className="flex items-center justify-between bg-white text-lg">
+          <div className="container flex h-full justify-between gap-10">
             <img src={images[1]} alt={`Slide 2`} className="rounded-xl" />
-            <div>
+            <div className="flex flex-grow flex-col items-center justify-center">
               <div className="flex flex-col uppercase">
-                Apa yang GoTravel punya ?
+                Apa yang GoGoTrip punya ?
               </div>
-              <ul>
+              <ul className="w-full justify-center self-center">
                 {features.map((feature, index) => {
                   return (
                     <li key={index}>
-                      <a href="#">
-                        <img src="" />
-                        <div>
-                          <div>{feature.title}</div>
-                          <div className="bg-gray-400">{feature.subtitle}</div>
+                      <a href="#" className="my-6 flex items-center gap-6">
+                        <div className="w-[12%] rounded-full bg-gray-50 p-6">
+                          <img src={feature.icon} className="" />
+                        </div>
+                        <div className="flex-grow">
+                          <div className="mb-4 text-2xl font-bold">
+                            {feature.title}
+                          </div>
+                          <button className="rounded-md bg-gray-50 px-4 py-1 text-sm font-semibold">
+                            {feature.subtitle}
+                          </button>
                         </div>
                       </a>
                     </li>
